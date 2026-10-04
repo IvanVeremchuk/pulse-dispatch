@@ -1,7 +1,7 @@
 # Pulse Dispatch — landing site
 
 Single-page marketing site for **Pulse Dispatch**, a done-for-you dispatch
-agency for local Toronto contractors (plumbers and handymen). The page exists to
+agency for home-service trades in Toronto and the GTA. The page exists to
 drive one action: a phone call to the live dispatcher line,
 **+1 (437) 476-0920**.
 
