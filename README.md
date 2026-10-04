@@ -3,7 +3,7 @@
 Single-page marketing site for **Pulse Dispatch**, a done-for-you dispatch
 agency for local Toronto contractors (plumbers and handymen). The page exists to
 drive one action: a phone call to the live dispatcher line,
-**+1 (436) 362-1793**.
+**+1 (437) 476-0920**.
 
 ## Stack
 
@@ -55,8 +55,8 @@ All copy lives in `index.html`. Three strings are fixed and should not be
 reworded:
 
 - the hero headline,
-- the call button label `Hear Our Live Dispatcher: +1 (436) 362-1793` (paired
-  with `href="tel:+14363621793"`, and repeated in the masthead, mid-page band,
+- the call button label `Hear Our Live Dispatcher: +1 (437) 476-0920` (paired
+  with `href="tel:+14374760920"`, and repeated in the masthead, mid-page band,
   intake section, closing section, and the sticky mobile bar),
 - the partner intake / scarcity line.
 
