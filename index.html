@@ -84,6 +84,9 @@
                 Ring the line yourself and listen to how a call gets handled
                 before you talk to us about your shop.
               </p>
+              <a class="cta-quiet" href="#callback"
+                >On a job? Leave your number and we'll call you back</a
+              >
             </div>
           </div>
 
@@ -366,6 +369,277 @@
               <span class="btn__text-num">+1 (436) 362-1793</span></span
             >
           </a>
+        </div>
+      </section>
+
+      <!-- ───────────────────────── CALLBACK ───────────────────────── -->
+      <section class="section section--alt" id="callback" aria-labelledby="callback-title">
+        <div class="shell callback">
+          <div class="section__head">
+            <p class="section__kicker">Off the tools</p>
+            <h2 class="section__title" id="callback-title">
+              Can't talk right now? We'll call you back.
+            </h2>
+            <p class="callback__lede">
+              Leave your number. We'll call you back when you're off the job.
+            </p>
+          </div>
+
+          <form
+            class="callback__form"
+            id="callback-form"
+            action="https://formspree.io/f/REPLACE_ME"
+            method="POST"
+          >
+            <div class="callback__gotcha" aria-hidden="true">
+              <label>
+                Leave this empty
+                <input
+                  type="text"
+                  name="_gotcha"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </label>
+            </div>
+            <input
+              type="hidden"
+              name="_subject"
+              value="Callback request — Pulse Dispatch"
+            />
+            <input
+              type="hidden"
+              name="page"
+              value="https://www.pulsedispatchai.com/"
+            />
+
+            <div class="field">
+              <label class="field__label" for="callback-name">Name</label>
+              <input
+                class="field__input"
+                id="callback-name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="callback-phone">Mobile number</label>
+              <input
+                class="field__input"
+                id="callback-phone"
+                name="phone"
+                type="tel"
+                required
+                autocomplete="tel"
+                inputmode="tel"
+                pattern="^(?:\+?1[\s.\-]?)?(?:\(?[2-9]\d{2}\)?[\s.\-]?)[2-9]\d{2}[\s.\-]?\d{4}$"
+                title="Enter a phone number we can call, including the area code."
+                aria-describedby="callback-phone-help callback-phone-error"
+              />
+              <p class="field__help" id="callback-phone-help">
+                We'll call or text this number.
+              </p>
+              <p class="field__error" id="callback-phone-error" hidden>
+                Enter a phone number we can call, including the area code.
+              </p>
+            </div>
+
+            <fieldset class="choice">
+              <legend class="choice__legend">Trade</legend>
+              <div class="choice__options">
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="trade"
+                    value="Plumbing"
+                    required
+                  />
+                  <span>Plumbing</span>
+                </label>
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="trade"
+                    value="Handyman"
+                    required
+                  />
+                  <span>Handyman</span>
+                </label>
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="trade"
+                    value="Other trade"
+                    required
+                  />
+                  <span>Other trade</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label class="field__label" for="callback-business"
+                >Business name <span class="field__optional">(optional)</span></label
+              >
+              <input
+                class="field__input"
+                id="callback-business"
+                name="business"
+                type="text"
+                autocomplete="organization"
+              />
+            </div>
+
+            <fieldset class="choice">
+              <legend class="choice__legend">
+                When a call comes in on a job, what happens now?
+                <span class="field__optional">(optional)</span>
+              </legend>
+              <div class="choice__options">
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="current_handling"
+                    value="I answer between jobs"
+                  />
+                  <span>I answer between jobs</span>
+                </label>
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="current_handling"
+                    value="It goes to voicemail"
+                  />
+                  <span>It goes to voicemail</span>
+                </label>
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="current_handling"
+                    value="Someone else picks up"
+                  />
+                  <span>Someone else picks up</span>
+                </label>
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="current_handling"
+                    value="I use an answering service"
+                  />
+                  <span>I use an answering service</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="choice">
+              <legend class="choice__legend">
+                Best time to call you back
+                <span class="field__optional">(optional)</span>
+              </legend>
+              <div class="choice__options">
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="callback_time"
+                    value="Before 8am"
+                  />
+                  <span>Before 8am</span>
+                </label>
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="callback_time"
+                    value="Around lunch"
+                  />
+                  <span>Around lunch</span>
+                </label>
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="callback_time"
+                    value="End of the day"
+                  />
+                  <span>End of the day</span>
+                </label>
+                <label class="pill">
+                  <input
+                    class="pill__input"
+                    type="radio"
+                    name="callback_time"
+                    value="Evenings"
+                  />
+                  <span>Evenings</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="callback__alert" id="callback-alert" role="alert" hidden>
+              <p>That didn't send. Call the line, or email us.</p>
+              <a class="btn btn--call" href="tel:+14363621793">
+                <span class="btn__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M6.5 3h-3v3c0 8.3 6.7 15 15 15h3v-3l-4.5-2-2.5 2.5A17 17 0 0 1 6 9.5L8.5 7 6.5 3Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linejoin="miter"
+                    />
+                  </svg>
+                </span>
+                <span class="btn__text"
+                  ><span class="btn__text-label">Hear Our Live Dispatcher:</span>
+                  <span class="btn__text-num">+1 (436) 362-1793</span></span
+                >
+              </a>
+              <a
+                class="callback__mail"
+                href="mailto:contact@ivanveremchuk.com?subject=Pulse%20Dispatch%20enquiry"
+                >contact@ivanveremchuk.com</a
+              >
+            </div>
+
+            <button class="btn btn--secondary" type="submit">Call me back</button>
+            <p class="callback__consent">
+              By sending this, you agree we can call or text you about Pulse
+              Dispatch.
+            </p>
+          </form>
+
+          <div class="callback__success" id="callback-success" hidden>
+            <p class="callback__success-copy">
+              Got it. We'll call you back at
+              <span id="callback-success-number"></span>.
+            </p>
+            <a class="btn btn--call" href="tel:+14363621793">
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M6.5 3h-3v3c0 8.3 6.7 15 15 15h3v-3l-4.5-2-2.5 2.5A17 17 0 0 1 6 9.5L8.5 7 6.5 3Z"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linejoin="miter"
+                  />
+                </svg>
+              </span>
+              <span class="btn__text"
+                ><span class="btn__text-label">Hear Our Live Dispatcher:</span>
+                <span class="btn__text-num">+1 (436) 362-1793</span></span
+              >
+            </a>
+          </div>
         </div>
       </section>
 

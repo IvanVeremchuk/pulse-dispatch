@@ -1,6 +1,7 @@
 import "@fontsource-variable/archivo/wdth.css";
 import "@fontsource/instrument-serif/latin-400.css";
 import "./style.css";
+import "./callback-form";
 
 /**
  * A reload otherwise restores the last scroll position, which on a long
