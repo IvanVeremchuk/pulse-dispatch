@@ -982,9 +982,11 @@ svg {
   white-space: nowrap;
 }
 
+/* Comfortably taller than the dock so the footer's last line stays readable
+   when the page is scrolled all the way down. */
 @media (max-width: 59.99rem) {
   :root {
-    --dock-h: 86px;
+    --dock-h: 100px;
   }
 }
 
