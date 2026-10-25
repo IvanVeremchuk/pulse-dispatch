@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.pulsedispatchai.com/#website",
+      "url": "https://www.pulsedispatchai.com/",
+      "name": "Pulse Dispatch",
+      "inLanguage": "en-CA",
+      "publisher": { "@id": "https://www.pulsedispatchai.com/#business" }
+    },
+    <!-- @include ld-business -->,
+    {
+      "@type": "Service",
+      "@id": "https://www.pulsedispatchai.com/#service",
+      "name": "AI receptionist",
+      "serviceType": "AI receptionist and answering service",
+      "provider": { "@id": "https://www.pulsedispatchai.com/#business" },
+      "areaServed": { "@type": "AdministrativeArea", "name": "Greater Toronto Area, Ontario, Canada" },
+      "audience": { "@type": "BusinessAudience", "name": "Trades, solo law firms, therapists and small clinics" },
+      "hasOfferCatalog": <!-- @include ld-offers -->
+    }
+  ]
+}
+</script>

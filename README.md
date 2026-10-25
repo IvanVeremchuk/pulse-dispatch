@@ -1,19 +1,21 @@
-# Pulse Dispatch — landing site
+# Pulse Dispatch — website
 
-Single-page marketing site for **Pulse Dispatch**, a done-for-you dispatch
-agency for home-service trades in Toronto and the GTA. The page exists to
-drive one action: a phone call to the live dispatcher line,
-**+1 (437) 476-0920**.
+Marketing site for **Pulse Dispatch**, an affordable done-for-you AI receptionist
+for trades and solo practices in Toronto and the GTA. Live at
+<https://www.pulsedispatchai.com>. The main action is calling the demo line,
+**(437) 476-0920**, or leaving a number in the call-back form.
+
+The business brief behind the pages (positioning, plans, referral matches,
+onboarding) is in [docs/brief.md](docs/brief.md).
 
 ## Stack
 
-- [Vite](https://vite.dev) + TypeScript (`vanilla-ts` template) — static output,
-  no framework, no runtime JS beyond the asset entry.
-- Hand-written CSS, no utility or component framework.
-- Self-hosted variable fonts via `@fontsource`: Archivo (display and body),
-  Instrument Serif (set numerals).
-- Inline SVG for the handful of line icons. No raster imagery, no photography,
-  no background video.
+- [Vite](https://vite.dev) + TypeScript, static output, no framework.
+- Hand-written CSS in `src/style.css` (design tokens at the top).
+- Self-hosted variable fonts via `@fontsource-variable`: Stack Sans Headline
+  (display) and Stack Sans Text (body).
+- No photography: the "pictures" are the product's own text messages, built in
+  HTML and marked `data-ui`.
 
 ## Run locally
 
@@ -24,41 +26,47 @@ npm install
 npm run dev
 ```
 
-The dev server listens on <http://127.0.0.1:43717>.
+Dev server: <http://127.0.0.1:43717>. `npm run build` then `npm run preview`
+serves the production build on <http://127.0.0.1:43718>.
 
-## Other commands
+Pushing to `main` deploys to GitHub Pages (`.github/workflows/pages.yml`).
 
-```bash
-npm run build     # typecheck, then emit the static site to dist/
-npm run preview   # serve the built site on http://127.0.0.1:43718
-```
-
-## Deploying
-
-`npm run build` produces a fully static `dist/` directory. It can be dropped on
-any static host (Netlify, Vercel, Cloudflare Pages, S3, nginx) with no server
-runtime and no environment variables.
-
-## Layout of the source
+## How the pages are put together
 
 ```
-index.html        all page markup, in section order
-src/main.ts       entry point: pulls in fonts and styles
-src/style.css     the entire design system and page styles
-public/favicon.svg
-vite.config.ts    dev/preview ports
+index.html                 home
+pricing/index.html         plans, comparison table, missed-call calculator
+how-it-works/index.html    the full go-live process (for technical readers)
+allied-health/index.html   clinic plans and practice-software integrations
+privacy/index.html         privacy policy (SMS / CASL wording)
+404.html
+partials/                  shared header, footer, plan tiles, sign-up form, JSON-LD
+content/industries.mjs     data for the 8 industry pages
+content/plans.mjs          plan facts for llms.txt and generated pages
+scripts/build-pages.mjs    writes ai-receptionist/*/, public/sitemap.xml, public/llms.txt
+src/                       main.ts, form, sample calls, configurator, calculator
 ```
 
-## Editing content
+- A page includes a partial with `<!-- @include name -->` (see `vite.config.ts`).
+- **Industry pages are generated.** Edit `content/industries.mjs`, never
+  `ai-receptionist/`, which is rebuilt (and git-ignored) on every `dev`/`build`.
+- FAQ structured data is generated from each page's visible `.faq__q` / `.faq__a`
+  pairs, so the answers search and AI engines read always match the page. The
+  build fails on invalid JSON-LD.
 
-All copy lives in `index.html`. Three strings are fixed and should not be
-reworded:
+## Changing prices
 
-- the hero headline,
-- the call button label `Hear Our Live Dispatcher: +1 (437) 476-0920` (paired
-  with `href="tel:+14374760920"`, and repeated in the masthead, mid-page band,
-  intake section, closing section, and the sticky mobile bar),
-- the partner intake / scarcity line.
+Prices appear in several places. Change them all together:
 
-The page deliberately carries no testimonials, client logos, review counts, or
-statistics.
+1. `partials/plans.html` (the plan tiles on home and pricing)
+2. `partials/ld-offers.html` (structured data)
+3. `pricing/index.html` (table, setup-fee section, FAQ)
+4. `index.html` FAQ, `content/plans.mjs`, `allied-health/index.html`
+5. `src/configurator.ts` and `src/calculator.ts` (plan suggestions)
+
+## Editing rules
+
+- The page carries no testimonials, client logos, review counts or invented
+  statistics. Add real ones only.
+- Sample callers, addresses and phone numbers (555 numbers) are fictional.
+- The call-back form posts to Formspree form `meaoybjy` (`src/form.ts`).

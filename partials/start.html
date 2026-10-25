@@ -1,0 +1,79 @@
+<section class="start chapter" id="start" data-chapter="accent" aria-labelledby="start-title">
+  <div class="grid start__grid">
+    <div class="start__copy">
+      <h2 class="start__title" id="start-title">Stop missing calls this week.</h2>
+      <p class="start__lede">
+        Leave your number. Ivan calls you back the same business day, hears how your calls run now,
+        and tells you which plan fits. No card, no contract to sign on the call.
+      </p>
+      <p class="start__alt">
+        Rather talk now? <a href="tel:+14374760920">Call (437) 476-0920</a> and our AI receptionist
+        will take your details, the same way it would for your customers.
+      </p>
+    </div>
+
+    <div class="dialog" data-ui>
+      <form class="dialog__form" id="start-form" action="https://formspree.io/f/meaoybjy" method="POST" novalidate>
+        <p class="dialog__title">Get your AI receptionist</p>
+        <div class="dialog__gotcha" aria-hidden="true">
+          <label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+        </div>
+        <input type="hidden" name="_subject" value="New lead: AI receptionist, Pulse Dispatch" />
+        <input type="hidden" name="page" value="https://www.pulsedispatchai.com/" />
+
+        <div class="field">
+          <label class="field__label" for="start-name">Your name</label>
+          <input class="field__input" id="start-name" name="name" type="text" required autocomplete="name" />
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="start-phone">Mobile number</label>
+          <input class="field__input" id="start-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel"
+            pattern="^(?:\+?1[\s.\-]?)?(?:\(?[2-9]\d{2}\)?[\s.\-]?)[2-9]\d{2}[\s.\-]?\d{4}$"
+            aria-describedby="start-phone-error" />
+          <p class="field__error" id="start-phone-error" hidden>Enter a number we can call, with the area code.</p>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="start-trade">Your business</label>
+          <select class="field__input" id="start-trade" name="trade">
+            <option value="Plumbing">Plumbing</option>
+            <option value="HVAC">HVAC, heating &amp; cooling</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Roofing">Roofing</option>
+            <option value="Locksmith">Locksmith</option>
+            <option value="Tree service">Tree service</option>
+            <option value="Law firm">Law firm</option>
+            <option value="Therapy practice">Therapy or counselling practice</option>
+            <option value="Allied health clinic">Physio, chiro, massage or other clinic</option>
+            <option value="Other">Something else</option>
+          </select>
+        </div>
+
+        <fieldset class="seg">
+          <legend class="field__label">Plan you're leaning towards</legend>
+          <div class="seg__options">
+            <label><input type="radio" name="plan" value="Solo $129" /><span>Solo</span></label>
+            <label><input type="radio" name="plan" value="Pro $299" /><span>Pro</span></label>
+            <label><input type="radio" name="plan" value="Team $599" /><span>Team</span></label>
+            <label><input type="radio" name="plan" value="Business $1000" /><span>Business</span></label>
+            <label><input type="radio" name="plan" value="Not sure" checked /><span>Not sure</span></label>
+          </div>
+        </fieldset>
+
+        <div class="dialog__alert" id="start-alert" role="alert" hidden>
+          That didn't send. Call <a href="tel:+14374760920">(437) 476-0920</a> or email
+          <a href="mailto:ivan@pulsedispatchai.com?subject=AI%20receptionist%20enquiry">ivan@pulsedispatchai.com</a>.
+        </div>
+
+        <button class="btn btn--primary btn--block" type="submit">Call me back</button>
+        <p class="dialog__consent">By sending this you agree we can call or text you about Pulse Dispatch. Reply STOP to opt out.</p>
+      </form>
+
+      <div class="dialog__done" id="start-done" hidden>
+        <p class="dialog__title">Got it.</p>
+        <p>We'll call <strong id="start-done-number"></strong> within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
