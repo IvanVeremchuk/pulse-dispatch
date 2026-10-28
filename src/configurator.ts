@@ -38,7 +38,7 @@ if (root) {
   const lines = () => {
     const trade = value("trade") || "plumber";
     const person = NO_TECH.has(trade) ? "you" : "your on-call tech";
-    const choose = NO_TECH.has(trade) ? "You text them a consult time." : "You text them a time.";
+    const choose = NO_TECH.has(trade) ? "You reply with a consult time." : "You reply with the tech and time.";
     return {
       greeting: `"Thanks for calling ${BUSINESS[trade]}. How can I help?"`,
       answer: {

@@ -24,13 +24,13 @@
 
 ## Booking
 - Two ways to book. It can book an open slot in your calendar during the call.
-- Or it texts you the job, you pick the time, and you text the customer back from your own phone, the same number they called. No app needed.
-- If the customer wants another time, they just text back. You confirm it.
+- Or it texts you the job. You reply in one line with the tech and the time, and the customer gets a text with both. No app needed.
+- If the customer wants another time, they just reply to that text. You send a new time the same way.
 - The AI never decides your schedule. You stay in charge.
 
 ## Prices (Canadian dollars, plus HST)
 - Solo is 129 dollars a month, plus a 49 dollar setup. 100 calls a month. Answering, job texts, ring-you-first and transfers.
-- Pro is 299 dollars a month, plus a 99 dollar setup. 300 calls. Adds booking, arrival times by text, missed-call text back, calling back web leads in a minute, and Google review requests.
+- Pro is 299 dollars a month, plus a 99 dollar setup. 300 calls. Adds booking, the tech and arrival time by text, missed-call text back, calling back web leads in a minute, and Google review requests.
 - Most solo trades pick Pro.
 - Team is 599 dollars a month, plus 2,500 setup. 600 calls. For crews of 2 to 10. Emergencies ring your on-call tech, jobs go to the right tech, and it connects to Jobber, Housecall Pro or QuickBooks.
 - Business is 1,000 dollars a month, plus 6,000 setup. For multi-location businesses: outbound calls, CRM connections, French and Spanish, custom voice and a dashboard.

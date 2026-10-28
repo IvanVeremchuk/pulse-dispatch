@@ -25,7 +25,7 @@ export const INDUSTRIES = [
       quote: "A pipe under my kitchen sink just burst. I turned the water off at the main. Can someone come tonight? I'm at 14 Elm Street in Mississauga.",
       text: "New job · urgent. Burst pipe, kitchen sink. Water off at main. Maria S., 14 Elm St, Mississauga. (647) 555-0182. Wants someone tonight.",
     },
-    plan: ["Pro", "$299/mo", "Most plumbers start on Pro: jobs go into your calendar, customers get a confirmation text, and web leads get called back."],
+    plan: ["Pro", "$299/mo", "Most plumbers start on Pro: reply with the tech and time in one line, the customer gets both by text, and web leads get called back."],
     faqs: [
       ["Can an AI receptionist tell a plumbing emergency from a routine call?", "Yes. It asks the same questions you would: is water running now, is the main off, is anything damaged. Active leaks, no water and sewage backups are flagged urgent and sent to you first."],
       ["Will it quote my prices for drain cleaning or a toilet install?", "On Team and Business plans it can quote your standard prices from your own price list. On Solo and Pro it takes the details and books the visit, and you quote."],
@@ -118,7 +118,7 @@ export const INDUSTRIES = [
     plan: ["Pro", "$299/mo", "Pro books inspections and texts homeowners the time. Roofing crews running several trucks usually choose Team."],
     faqs: [
       ["Can an AI receptionist handle a flood of calls after a storm?", "Yes. It answers every call at once, so none go to voicemail, and sorts active leaks ahead of quotes."],
-      ["Will it book roof inspections?", "Yes. On Pro it can book open slots straight into your calendar, or text you the request so you can text the homeowner a time."],
+      ["Will it book roof inspections?", "Yes. On Pro it can book open slots straight into your calendar, or text you the request; reply with the crew and time and the homeowner gets a text."],
       ["What does an AI receptionist cost for a roofing company?", "From $129 a month plus $49 setup. Pro is $299 a month plus $99 setup, and Team is $599 a month plus $2,500 setup."],
     ],
   },
