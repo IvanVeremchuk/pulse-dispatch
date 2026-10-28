@@ -83,9 +83,16 @@ function page(item) {
           <h1 class="page-hero__title" id="page-title">${esc(item.h1)}</h1>
           <p class="page-hero__lede">${esc(item.lede)}</p>
           <div class="page-hero__actions">
-            <a class="btn btn--primary" href="tel:+12892687607">Hear it answer: ${PHONE_DISPLAY}</a>
-            <a class="btn btn--ghost" href="#start">Get a call back</a>
+${
+  item.demo
+    ? `            <a class="btn btn--primary" href="tel:${item.demo.tel}">${esc(item.demo.label)}: ${esc(item.demo.display)}</a>
+            <a class="btn btn--ghost" href="tel:+12892687607">General line: ${PHONE_DISPLAY}</a>
           </div>
+          <p class="page-hero__note">Call as if your furnace just quit. You'll talk to the AI for a demo ${esc(item.name)} company, then get the same texts a real customer gets.</p>`
+    : `            <a class="btn btn--primary" href="tel:+12892687607">Hear it answer: ${PHONE_DISPLAY}</a>
+            <a class="btn btn--ghost" href="#start">Get a call back</a>
+          </div>`
+}
           <figure class="page-hero__aside" data-ui aria-label="Example call and the text you get">
             <div class="sms">
               <p class="sms__meta">Caller</p>
@@ -211,6 +218,7 @@ writeFileSync(
 > Pulse Dispatch is a done-for-you AI receptionist for trades and solo practices in Toronto and the Greater Toronto Area (${AREAS.join(", ")}). It answers business calls 24/7, texts and emails the owner each job, and books the customer. Plans start at $129 CAD a month.
 
 - Phone (hear the AI answer): ${PHONE_DISPLAY}
+${INDUSTRIES.filter((i) => i.demo).map((i) => `- ${i.name} demo line (a demo ${i.name} company): ${i.demo.display}`).join("\n")}
 - Email: ${EMAIL}
 - Service area: Toronto and the GTA, Ontario, Canada
 - Who it's for: ${INDUSTRIES.map((i) => i.name.toLowerCase()).join(", ")}, and allied health clinics (physio, chiro, massage, counselling)

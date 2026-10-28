@@ -159,9 +159,14 @@ function show(id: string) {
   }, 160);
 }
 
+// Trades with their own demo line show it under the sample call.
+const tryLine = document.querySelector<HTMLElement>("[data-try]");
+const HAS_DEMO_LINE = new Set(["hvac"]);
+
 picks?.addEventListener("click", (event) => {
   const button = (event.target as HTMLElement).closest<HTMLButtonElement>("button[data-scenario]");
   if (!button) return;
   for (const b of picks.querySelectorAll("button")) b.setAttribute("aria-pressed", String(b === button));
   show(button.dataset.scenario ?? "plumber");
+  if (tryLine) tryLine.hidden = !HAS_DEMO_LINE.has(button.dataset.scenario ?? "");
 });

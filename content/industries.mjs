@@ -37,6 +37,9 @@ export const INDUSTRIES = [
     name: "HVAC",
     trade: "HVAC",
     field: "field-1",
+    // A demo HVAC company on its own line: callers hear an HVAC call and the
+    // dispatch texts that follow it.
+    demo: { tel: "+12899143125", display: "(289) 914-3125", label: "Hear an HVAC call" },
     title: "AI Receptionist for HVAC Companies in Toronto | Pulse Dispatch",
     description:
       "An AI receptionist for GTA heating and cooling companies. Handles no-heat and no-AC calls 24/7, texts you the job and books the visit. From $129/month.",
