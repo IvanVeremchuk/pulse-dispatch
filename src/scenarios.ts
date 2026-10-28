@@ -25,8 +25,8 @@ const SCENARIOS: Record<string, Scenario> = {
       ["Phone", "(647) 555-0182"],
       ["Notes", "Water off at the main. Wants someone tonight."],
     ],
-    action: "Pick the tech & time",
-    sent: 'Maria got: "We got your request. We\'ll text you the tech and arrival time shortly."',
+    action: "Text Maria back",
+    sent: 'Maria got: "We got your request. We\'ll text you shortly with an arrival time."',
   },
   hvac: {
     quote:
@@ -39,7 +39,7 @@ const SCENARIOS: Record<string, Scenario> = {
       ["Phone", "(905) 555-0147"],
       ["Notes", "Lennox, about 12 years old. Infant at home."],
     ],
-    action: "Pick the tech & time",
+    action: "Text Raj a time",
     sent: 'Raj got: "We got your request. A technician will be confirmed by text shortly."',
   },
   electrician: {
@@ -67,7 +67,7 @@ const SCENARIOS: Record<string, Scenario> = {
       ["Phone", "(289) 555-0163"],
       ["Notes", "Missing shingles. Needs a tarp before rain tomorrow. Insurance claim likely."],
     ],
-    action: "Pick the crew & time",
+    action: "Text Susan a time",
     sent: 'Susan got: "We got your request. We\'ll text you the arrival time shortly."',
   },
   locksmith: {

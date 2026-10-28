@@ -223,8 +223,8 @@ ${PLANS.map((p) => `- ${p.name}: $${p.monthly.toLocaleString("en-CA")}/month + $
 ## How it works
 
 - Call forwarding options: ring the owner first and let the AI answer if they don't (no voicemail); AI answers every call; AI answers only after hours; forward callers to the owner when they ask for a person.
-- Booking options: the AI books an open calendar slot during the call, or the owner gets a text and email with a dispatch link to pick the tech and time, then the customer gets a text with the tech and arrival time and can reply to reschedule. The owner approves every change.
-- Customers keep their existing number (forwarding or free porting) or get a new local number.
+- Booking options: the AI books an open calendar slot during the call, or the owner gets the job by text and email and texts the customer a time from their own phone. Customers text back to reschedule. The owner makes every decision.
+- Customers keep their existing number with call forwarding (Rogers, Bell, Telus, Freedom) or get a new local number.
 
 ## Pages
 

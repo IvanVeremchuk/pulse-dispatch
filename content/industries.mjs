@@ -25,7 +25,7 @@ export const INDUSTRIES = [
       quote: "A pipe under my kitchen sink just burst. I turned the water off at the main. Can someone come tonight? I'm at 14 Elm Street in Mississauga.",
       text: "New job · urgent. Burst pipe, kitchen sink. Water off at main. Maria S., 14 Elm St, Mississauga. (647) 555-0182. Wants someone tonight.",
     },
-    plan: ["Pro", "$299/mo", "Most plumbers start on Pro: customers get the tech and arrival time by text, and you pick both from one link."],
+    plan: ["Pro", "$299/mo", "Most plumbers start on Pro: jobs go into your calendar, customers get a confirmation text, and web leads get called back."],
     faqs: [
       ["Can an AI receptionist tell a plumbing emergency from a routine call?", "Yes. It asks the same questions you would: is water running now, is the main off, is anything damaged. Active leaks, no water and sewage backups are flagged urgent and sent to you first."],
       ["Will it quote my prices for drain cleaning or a toilet install?", "On Team and Business plans it can quote your standard prices from your own price list. On Solo and Pro it takes the details and books the visit, and you quote."],
@@ -89,7 +89,7 @@ export const INDUSTRIES = [
     faqs: [
       ["Can an AI receptionist give safety advice to callers?", "It gives the basic safety steps you approve, like staying away from the panel and calling 911 if there's smoke. It never tells anyone to touch wiring."],
       ["Will it book EV charger and panel upgrade estimates?", "Yes. It asks for the panel size, house age and what they want to add, then books an estimate visit or sends you the request."],
-      ["Can I keep my business number?", "Yes. Forward unanswered calls to us from any carrier, or move your number over for free."],
+      ["Can I keep my business number?", "Yes. Forward unanswered calls to us from Rogers, Bell, Telus or Freedom. It takes two minutes."],
     ],
   },
   {
@@ -118,7 +118,7 @@ export const INDUSTRIES = [
     plan: ["Pro", "$299/mo", "Pro books inspections and texts homeowners the time. Roofing crews running several trucks usually choose Team."],
     faqs: [
       ["Can an AI receptionist handle a flood of calls after a storm?", "Yes. It answers every call at once, so none go to voicemail, and sorts active leaks ahead of quotes."],
-      ["Will it book roof inspections?", "Yes. On Pro it sends you the request and you pick the time with one tap; it can also book open slots straight into your calendar."],
+      ["Will it book roof inspections?", "Yes. On Pro it can book open slots straight into your calendar, or text you the request so you can text the homeowner a time."],
       ["What does an AI receptionist cost for a roofing company?", "From $129 a month plus $49 setup. Pro is $299 a month plus $99 setup, and Team is $599 a month plus $2,500 setup."],
     ],
   },
@@ -238,7 +238,7 @@ export const INDUSTRIES = [
     plan: ["Practitioner", "$299/mo", "Most solo therapists choose our Practitioner plan, which books into your calendar or practice software."],
     faqs: [
       ["Is an AI receptionist appropriate for a therapy practice?", "For booking, yes. It's set up to take only what's needed to book an intake, never clinical history, and to handle crisis calls by giving 911 and 988 straight away."],
-      ["Does it work with Jane or Owl Practice?", "Yes. Depending on your software settings it books directly or sends you a one-tap request to confirm. See our clinic plans for details."],
+      ["Does it work with Jane or Owl Practice?", "Yes. Depending on your software settings it books directly or texts you the request to confirm. See our clinic plans for details."],
       ["What does it cost?", "From $129 a month for answering and messages. The Practitioner plan, with booking, is $299 a month plus a $499 setup."],
     ],
   },

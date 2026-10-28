@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#bbf697" />
     <title>How It Works: AI Receptionist Setup &amp; Go-Live | Pulse Dispatch</title>
-    <meta name="description" content="Every step from sign-up to live calls: call mapping, number forwarding or porting, calendar and CRM setup, test calls and handover. Timelines for each plan." />
+    <meta name="description" content="Every step from sign-up to live calls: call mapping, call forwarding, calendar and CRM setup, test calls and handover. Timelines for each plan." />
     <link rel="canonical" href="https://www.pulsedispatchai.com/how-it-works/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:type" content="article" />
@@ -29,7 +29,7 @@
               { "@type": "HowToStep", "position": 1, "name": "Map how your calls run today", "text": "Who answers, what callers ask, what gets booked and what gets escalated." },
               { "@type": "HowToStep", "position": 2, "name": "Write the build brief", "text": "Prompts, call flows and escalation rules for the AI agent specialist." },
               { "@type": "HowToStep", "position": 3, "name": "Gather your business details", "text": "Business info, FAQs, services, pricing and transfer numbers." },
-              { "@type": "HowToStep", "position": 4, "name": "Set up the phone line", "text": "Forward your existing number, port it, or get a new local number." },
+              { "@type": "HowToStep", "position": 4, "name": "Set up the phone line", "text": "Forward your existing number, or get a new local number." },
               { "@type": "HowToStep", "position": 5, "name": "Connect your tools", "text": "Calendar, CRM and booking integrations with our developer." },
               { "@type": "HowToStep", "position": 6, "name": "Run test calls", "text": "Test calls on every path, fixing what breaks before a customer hears it." },
               { "@type": "HowToStep", "position": 7, "name": "Train and hand over", "text": "A walkthrough of the texts, links and dashboard, then go live." },
@@ -103,13 +103,13 @@
             <li>
               <h3>Set up your phone line<span class="journey__when">Day 2–3</span></h3>
               <div>
-                <p>Keep your number and forward calls to us, move your number over, or get a new local number. Forwarding takes two minutes and works with Rogers, Bell, Telus, Fido, Koodo, Freedom and most VoIP lines.</p>
+                <p>Keep your number and forward calls to us, or get a new local number. Forwarding takes two minutes on Rogers, Bell, Telus and Freedom. On another carrier or phone system? Ask us and we will check.</p>
               </div>
             </li>
             <li>
               <h3>Connect your tools<span class="journey__when">Pro: day 3–5 · Team and Business: week 2–3</span></h3>
               <div>
-                <p>Pro connects your Google or Outlook calendar and your dispatch link. On Team and Business, our developer connects your job software or CRM (Jobber, Housecall Pro, ServiceTitan, HubSpot, Clio and others) and any booking rules.</p>
+                <p>Pro connects your Google or Outlook calendar and your booking texts. On Team and Business, our developer connects your job software or CRM (Jobber, Housecall Pro, ServiceTitan, HubSpot, Clio and others) and any booking rules.</p>
               </div>
             </li>
             <li>
@@ -122,7 +122,7 @@
             <li>
               <h3>Training and handover<span class="journey__when">Go-live day · 20 minutes</span></h3>
               <div>
-                <p>We show you the texts and emails you'll get, how the dispatch link works, and how to change something (usually just text us). Business plans get a dashboard walkthrough for whoever will use it.</p>
+                <p>We show you the texts and emails you'll get, how to text customers back, and how to change something (usually just text us). Business plans get a dashboard walkthrough for whoever will use it.</p>
               </div>
             </li>
             <li>
@@ -153,27 +153,26 @@
           <h2 class="part__title" id="dispatch-title">How booking works on Pro.</h2>
           <div class="part__split">
             <div class="prose">
-              <p>The AI doesn't choose your arrival times. It collects the job, and you decide who goes and when. That keeps you in charge of your day.</p>
+              <p>The AI doesn't choose your arrival times. It collects the job, and you decide who goes and when. No app to learn: it all happens in your normal text messages.</p>
               <ol class="ticks">
                 <li>The customer calls. The AI takes their name, address and the problem.</li>
                 <li>The customer gets a text: "We got your request."</li>
-                <li>You get a text and an email with the job and a dispatch link. Tap it, pick the tech and the time.</li>
-                <li>The customer gets a second text with the tech's name and arrival time.</li>
-                <li>If they want another time, they reply, for example "change my time to 5 pm". You get a text to approve the new time, and the customer gets the update.</li>
+                <li>You get a text and an email with the job.</li>
+                <li>You text the customer a time from your own phone, the same number they called.</li>
+                <li>If they need another time, they just text you back.</li>
               </ol>
               <p>Prefer the AI to book open slots during the call? Connect your calendar and it will offer only the times you've left open.</p>
             </div>
-            <div class="jobcard" data-ui>
-              <p class="jobcard__from">Dispatch link · Elm Street Plumbing</p>
-              <p class="jobcard__title">Burst pipe, kitchen sink</p>
-              <dl class="jobcard__rows">
-                <div><dt>Customer</dt><dd>Maria Santos, 14 Elm St</dd></div>
-                <div><dt>Tech</dt><dd><strong>Dave</strong> · Sam · Luis</dd></div>
-                <div><dt>Arrival</dt><dd><strong>Tonight 8:15–8:45 pm</strong></dd></div>
-              </dl>
-              <p class="jobcard__action">Send Dave at 8:15 pm</p>
-              <p class="jobcard__sent">Maria will get: "Hi Maria, Dave is on the way. Arriving 8:15–8:45 pm. Reply to change the time."</p>
-            </div>
+            <figure data-ui aria-label="Example: the job text, then the owner's reply">
+              <div class="sms">
+                <p class="sms__meta">7:42 pm · to you</p>
+                <p class="sms__bubble sms__bubble--in"><strong>New job · urgent</strong><br />Burst pipe, kitchen sink. Maria S., 14 Elm St, Mississauga. (647) 555-0182</p>
+                <p class="sms__meta">7:44 pm · you, to Maria</p>
+                <p class="sms__bubble sms__bubble--out">Hi Maria, it's Dave from Elm Street Plumbing. I can be there 8:15–8:45 tonight.</p>
+                <p class="sms__bubble sms__bubble--in-cust">Could you make it 9?</p>
+                <p class="sms__bubble sms__bubble--out">Sure, see you at 9.</p>
+              </div>
+            </figure>
           </div>
         </div>
       </section>
@@ -188,7 +187,7 @@
               </thead>
               <tbody>
                 <tr><th scope="row">Solo · $129</th><td>3 business days</td><td>Greeting, FAQs, job texts, ring-first and transfers</td><td>One form and a 15-minute call</td></tr>
-                <tr><th scope="row">Pro · $299</th><td>About 7 days</td><td>Plus dispatch link, calendar, missed-call text back, web lead call-back, review requests</td><td>Form, 30-minute call, calendar access, your techs</td></tr>
+                <tr><th scope="row">Pro · $299</th><td>About 7 days</td><td>Plus calendar booking, confirmation texts, missed-call text back, web lead call-back, review requests</td><td>Form, 30-minute call, calendar access, your techs</td></tr>
                 <tr><th scope="row">Team · $599</th><td>2 to 3 weeks</td><td>Plus emergency and area routing, price quotes, WhatsApp and web replies, one job-software connection</td><td>Call-flow session with whoever answers now, price list, software access</td></tr>
                 <tr><th scope="row">Business · $1,000</th><td>25 to 30 days</td><td>Plus outbound calls, CRM integrations, languages, custom voice, dashboard</td><td>A signed scope, a point person, CRM and calendar access</td></tr>
               </tbody>
@@ -221,11 +220,11 @@
         </div>
         <div class="faq__band" data-chapter="field-3">
           <h3 class="faq__q">Does call forwarding work with my carrier?</h3>
-          <p class="faq__a">Yes. Conditional call forwarding (forward when busy or unanswered) works on Rogers, Bell, Telus, Fido, Koodo, Virgin, Freedom and most business VoIP systems like RingCentral, Ooma and Microsoft Teams Phone. We send you the exact code to dial for your carrier.</p>
+          <p class="faq__a">Yes. Conditional call forwarding (forward when busy or unanswered) works on Rogers, Bell, Telus and Freedom Mobile. We send you the exact code to dial. On another carrier or a business phone system? Ask us and we will check before you sign up.</p>
         </div>
         <div class="faq__band" data-chapter="bg">
-          <h3 class="faq__q">Can you port my existing number?</h3>
-          <p class="faq__a">Yes, for free. Porting a Canadian number usually takes 3 to 10 business days. We keep calls forwarded during the move so nothing is missed.</p>
+          <h3 class="faq__q">Can I use a new number instead?</h3>
+          <p class="faq__a">Yes. We can set you up with a new local number for your business. Many owners put it on their van, website and Google profile, and keep their cell private.</p>
         </div>
         <div class="faq__band" data-chapter="field-3">
           <h3 class="faq__q">Do I need to log into a dashboard?</h3>
