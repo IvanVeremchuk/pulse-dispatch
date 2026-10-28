@@ -3,7 +3,7 @@
 Marketing site for **Pulse Dispatch**, an affordable done-for-you AI receptionist
 for trades and solo practices in Toronto and the GTA. Live at
 <https://www.pulsedispatchai.com>. The main action is calling the demo line,
-**(437) 476-0920**, or leaving a number in the call-back form.
+**(289) 268-7607**, or leaving a number in the call-back form.
 
 The business brief behind the pages (positioning, plans, referral matches,
 onboarding) is in [docs/brief.md](docs/brief.md).

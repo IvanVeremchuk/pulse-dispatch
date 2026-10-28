@@ -2,8 +2,8 @@
 // generator. The visible plan copy lives in the HTML; keep the two in step.
 
 export const SITE = "https://www.pulsedispatchai.com";
-export const PHONE = "+14374760920";
-export const PHONE_DISPLAY = "(437) 476-0920";
+export const PHONE = "+12892687607";
+export const PHONE_DISPLAY = "(289) 268-7607";
 export const EMAIL = "ivan@pulsedispatchai.com";
 
 export const AREAS = [

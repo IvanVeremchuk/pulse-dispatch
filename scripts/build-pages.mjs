@@ -33,7 +33,7 @@ function page(item) {
         serviceType: "AI receptionist and answering service",
         description: item.description,
         url,
-        provider: { "@type": "ProfessionalService", "@id": `${SITE}/#business`, name: "Pulse Dispatch", telephone: "+1-437-476-0920", url: `${SITE}/` },
+        provider: { "@type": "ProfessionalService", "@id": `${SITE}/#business`, name: "Pulse Dispatch", telephone: "+1-289-268-7607", url: `${SITE}/` },
         areaServed: AREAS.map((name) => ({ "@type": "City", name })),
         audience: { "@type": "BusinessAudience", name: item.name },
         offers: {
@@ -83,7 +83,7 @@ function page(item) {
           <h1 class="page-hero__title" id="page-title">${esc(item.h1)}</h1>
           <p class="page-hero__lede">${esc(item.lede)}</p>
           <div class="page-hero__actions">
-            <a class="btn btn--primary" href="tel:+14374760920">Hear it answer: ${PHONE_DISPLAY}</a>
+            <a class="btn btn--primary" href="tel:+12892687607">Hear it answer: ${PHONE_DISPLAY}</a>
             <a class="btn btn--ghost" href="#start">Get a call back</a>
           </div>
           <figure class="page-hero__aside" data-ui aria-label="Example call and the text you get">
